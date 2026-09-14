@@ -1,0 +1,2978 @@
+/* ==========================================
+   DIGITAL WELLNESS HUB
+   HOME PAGE STYLESHEET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFFDF7;
+    color:#355070;
+    overflow-x:hidden;
+}
+
+/* ========= NAVBAR ========= */
+
+.navbar{
+    background:#ffffff;
+    padding:14px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-family:'Fredoka',sans-serif;
+    font-size:28px;
+    color:#0B6BCB !important;
+    font-weight:600;
+}
+
+.nav-link{
+    color:#355070 !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#2DC653 !important;
+}
+
+/* ========= HERO ========= */
+
+.hero{
+    padding:130px 0 90px;
+    background:linear-gradient(135deg,#DDF7FF,#FFF2BF,#FFE0F1);
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-content h1{
+    font-family:'Baloo 2',cursive;
+    font-size:65px;
+    color:#0F5DA8;
+    line-height:1.05;
+    margin:20px 0;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#5C677D;
+    margin-bottom:30px;
+}
+
+.welcome-badge{
+    display:inline-block;
+    background:#ffffff;
+    color:#2DC653;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-btn{
+    background:#35C759;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.hero-btn:hover{
+    background:#21A744;
+    color:white;
+    transform:translateY(-3px);
+}
+
+.hero-btn-outline{
+    border:2px solid #35C759;
+    color:#35C759;
+    background:white;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.hero-btn-outline:hover{
+    background:#35C759;
+    color:white;
+}
+
+.hero-image{
+    width:95%;
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* ========= CLOUDS ========= */
+
+.cloud{
+    position:absolute;
+    font-size:70px;
+    opacity:.4;
+    animation:cloudMove 10s infinite ease-in-out;
+}
+
+.cloud1{
+    top:40px;
+    left:5%;
+}
+
+.cloud2{
+    top:120px;
+    right:8%;
+}
+
+.cloud3{
+    bottom:30px;
+    left:50%;
+}
+
+@keyframes cloudMove{
+    50%{
+        transform:translateX(20px);
+    }
+}
+
+/* Rainbow Decoration */
+
+.rainbow{
+    position:absolute;
+    bottom:-50px;
+    right:-30px;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:
+        radial-gradient(circle at center,
+        transparent 40%,
+        #FFD166 41% 46%,
+        transparent 47% 52%,
+        #FF9F9F 53% 58%,
+        transparent 59% 64%,
+        #69C9FF 65% 70%,
+        transparent 71% 76%,
+        #7ED957 77% 82%,
+        transparent 83%);
+    opacity:.3;
+}
+
+/* ========= COMMON ========= */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-family:'Baloo 2',cursive;
+    color:#126782;
+    font-size:46px;
+    margin-bottom:10px;
+}
+
+.section-subtitle{
+    color:#666;
+    font-size:18px;
+}
+
+/* ========= FEATURE CARDS ========= */
+
+.feature-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:30px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:45px;
+    color:#2DC653;
+    margin-bottom:18px;
+}
+
+.feature-card h5{
+    font-family:'Fredoka';
+    color:#0F5DA8;
+}
+
+/* ========= CHALLENGE ========= */
+
+.challenge-section{
+    background:#DFFAFF;
+}
+
+.challenge-section .container{
+    background:white;
+    border-radius:35px;
+    padding:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.challenge-section h2{
+    color:#0F5DA8;
+    font-family:'Baloo 2';
+}
+
+#challengeText{
+    color:#FF5A5F;
+    font-family:'Fredoka';
+    margin:20px 0;
+}
+
+.challenge-btn{
+    background:#FFD54F;
+    border:none;
+    border-radius:30px;
+    padding:12px 28px;
+    font-weight:600;
+}
+
+.challenge-btn:hover{
+    background:#F6BE00;
+}
+
+.challenge-image{
+    border-radius:30px;
+}
+
+/* ========= AGE CARDS ========= */
+
+.age-preview{
+    background:#FFFDF9;
+}
+
+.age-card{
+    background:white;
+    border-radius:28px;
+    padding:25px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.age-card:hover{
+    background:#F0FFF4;
+    transform:translateY(-8px);
+}
+
+.age-card img{
+    width:110px;
+    height:110px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #CFF8D7;
+    margin:auto;
+}
+
+.age-card h5{
+    margin-top:18px;
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+/* ========= GOALS ========= */
+
+.goals-section{
+    background:linear-gradient(135deg,#FFF0F8,#E4FBFF);
+}
+
+.goal-card{
+    background:white;
+    padding:30px;
+    border-radius:30px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.counter{
+    font-family:'Fredoka';
+    color:#2DC653;
+    font-size:52px;
+    display:block;
+}
+
+.goal-card p{
+    margin-top:10px;
+    font-weight:600;
+}
+
+/* ========= TIPS ========= */
+
+.tips-section{
+    background:#FFF7D9;
+}
+
+.tip-card-horizontal{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background:white;
+    border-radius:25px;
+    padding:18px;
+    height:100%;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.tip-card-horizontal:hover{
+    transform:scale(1.02);
+}
+
+.tip-card-horizontal img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.tip-card-horizontal h5{
+    color:#0F5DA8;
+    font-family:'Fredoka';
+}
+
+/* ========= QUOTE ========= */
+
+.quote-section{
+    background:linear-gradient(135deg,#CBFFF2,#FFF6C8,#FFE5F3);
+}
+
+.quote-section .container{
+    background:white;
+    border-radius:35px;
+    padding:50px;
+    box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.quote-section h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+#quoteText{
+    font-family:'Fredoka';
+    font-size:28px;
+    color:#FF5A5F;
+    margin:25px 0;
+}
+
+.quote-btn{
+    background:#35C759;
+    color:white;
+    border-radius:35px;
+    padding:12px 28px;
+}
+
+.quote-btn:hover{
+    background:#1FA845;
+    color:white;
+}
+
+/* ========= CTA ========= */
+
+.cta-section{
+    background:#FFFDF7;
+}
+
+.cta-section h2{
+    color:#0F5DA8;
+    font-family:'Baloo 2';
+    font-size:42px;
+}
+
+.cta-section p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+/* ========= FOOTER ========= */
+
+.footer{
+    background:#0F5DA8;
+    color:white;
+    padding:50px 0 25px;
+    text-align:center;
+}
+
+.footer h3{
+    font-family:'Baloo 2';
+    font-size:36px;
+}
+
+.footer-icons{
+    margin:20px 0;
+}
+
+.footer-icons i{
+    font-size:24px;
+    margin:0 12px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.footer-icons i:hover{
+    color:#FFD54F;
+    transform:translateY(-5px);
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+    color:#EAF7FF;
+}
+
+/* ========= ANIMATIONS ========= */
+
+.feature-card,
+.age-card,
+.goal-card,
+.tip-card-horizontal{
+    transition:.4s;
+}
+
+.feature-card:hover,
+.age-card:hover,
+.goal-card:hover,
+.tip-card-horizontal:hover{
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media(max-width:992px){
+
+    .hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-image{
+        margin-top:40px;
+    }
+
+    .cta-section{
+        text-align:center;
+    }
+
+    .cta-section img{
+        margin-bottom:30px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .tip-card-horizontal{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .challenge-section .container,
+    .quote-section .container{
+        padding:25px;
+    }
+
+    .counter{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar-brand{
+        font-size:22px;
+    }
+
+    .hero-btn,
+    .hero-btn-outline{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .cloud{
+        display:none;
+    }
+
+}
+
+/* ===== Scroll Reveal Animation ===== */
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===== Ripple Button ===== */
+
+.hero-btn,
+.challenge-btn,
+.quote-btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:rgba(255,255,255,.7);
+    transform:scale(0);
+    animation:ripple .6s linear;
+}
+
+@keyframes ripple{
+
+    to{
+        transform:scale(18);
+        opacity:0;
+    }
+
+}
+
+/* ===== Floating Stars ===== */
+
+.floating-star{
+
+    position:fixed;
+    bottom:-40px;
+    z-index:999;
+    pointer-events:none;
+    animation:starFloat linear forwards;
+
+}
+
+@keyframes starFloat{
+
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+
+}
+
+/* ===== Back To Top Button ===== */
+
+#topButton{
+
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#35C759;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:1000;
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+    transition:.3s;
+
+}
+
+#topButton:hover{
+
+    background:#1FA845;
+    transform:translateY(-5px);
+
+}
+/* ==========================================
+        AGE GUIDE PAGE
+========================================== */
+
+/* ---------- Hero Section ---------- */
+
+.age-hero{
+    background:linear-gradient(135deg,#DFF8FF,#FFF5C5,#FFE6F4);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.age-hero::before{
+    content:"☁️";
+    position:absolute;
+    top:30px;
+    left:50px;
+    font-size:60px;
+    opacity:.4;
+}
+
+.age-hero::after{
+    content:"🌈";
+    position:absolute;
+    bottom:20px;
+    right:40px;
+    font-size:90px;
+    opacity:.25;
+}
+
+.age-hero h1{
+    font-family:'Baloo 2',cursive;
+    font-size:60px;
+    color:#126782;
+    margin:20px 0;
+    line-height:1.1;
+}
+
+.age-hero p{
+    color:#5C677D;
+    font-size:18px;
+}
+
+/* ---------- Age Selection ---------- */
+
+.age-selection{
+    background:#FFFDF8;
+}
+
+.age-select-card{
+    background:white;
+    border-radius:30px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    height:100%;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    border:3px solid transparent;
+}
+
+.age-select-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    border-color:#7ED957;
+    background:#F1FFF4;
+}
+
+.age-select-card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #D5FFE2;
+    margin:auto;
+}
+
+.age-select-card h4{
+    margin-top:18px;
+    color:#126782;
+    font-family:'Fredoka',sans-serif;
+}
+
+.age-select-card p{
+    color:#777;
+}
+
+/* ---------- Detail Box ---------- */
+
+.age-details{
+    background:#EFFFFA;
+}
+
+.detail-box{
+    background:white;
+    border-radius:35px;
+    padding:40px;
+    box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.detail-box h2{
+    color:#0F5DA8;
+    font-family:'Baloo 2';
+}
+
+.detail-box p{
+    color:#555;
+    font-size:17px;
+}
+
+/* ---------- Mini Cards ---------- */
+
+.mini-card{
+    background:#F9FFFD;
+    border-radius:25px;
+    padding:20px;
+    text-align:center;
+    height:100%;
+    transition:.3s;
+    border:2px dashed #B8E8FF;
+}
+
+.mini-card:hover{
+    background:#E5FFF2;
+    transform:translateY(-5px);
+}
+
+.mini-card i{
+    font-size:40px;
+    color:#2DC653;
+    margin-bottom:15px;
+}
+
+.mini-card h5{
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+/* ---------- Recommendation Cards ---------- */
+
+.recommendation-section{
+    background:#FFF7E6;
+}
+
+.recommend-card{
+    color:white;
+    border-radius:28px;
+    padding:30px 20px;
+    text-align:center;
+    transition:.4s;
+    height:100%;
+}
+
+.recommend-card:hover{
+    transform:scale(1.05);
+}
+
+.recommend-card h4{
+    font-family:'Fredoka';
+    margin-bottom:15px;
+}
+
+.recommend-card h3{
+    font-size:34px;
+    margin-bottom:15px;
+    font-family:'Baloo 2';
+}
+
+.green{
+    background:#55C26A;
+}
+
+.yellow{
+    background:#F4B942;
+}
+
+.blue{
+    background:#4A90E2;
+}
+
+.pink{
+    background:#FF6FAF;
+}
+
+/* ---------- Sleep Timeline ---------- */
+
+.sleep-timeline{
+    background:#EEF8FF;
+}
+
+.timeline{
+    position:relative;
+    margin:40px auto;
+    max-width:900px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    width:6px;
+    height:100%;
+    transform:translateX(-50%);
+    background:#7ED957;
+    border-radius:20px;
+}
+
+.timeline-item{
+    width:46%;
+    background:white;
+    padding:20px;
+    border-radius:25px;
+    margin-bottom:35px;
+    box-shadow:0 10px 18px rgba(0,0,0,.08);
+    position:relative;
+}
+
+.timeline-item:nth-child(odd){
+    margin-right:auto;
+}
+
+.timeline-item:nth-child(even){
+    margin-left:auto;
+}
+
+.timeline-item span{
+    display:inline-block;
+    font-family:'Fredoka';
+    color:#126782;
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+/* ---------- Offline Activities ---------- */
+
+.offline-section{
+    background:#FFFDF5;
+}
+
+.offline-card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.offline-card:hover{
+    transform:translateY(-8px);
+}
+
+.offline-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.offline-card h5{
+    padding:18px 20px 10px;
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+.offline-card p{
+    padding:0 20px 20px;
+}
+
+/* ---------- Warning Section ---------- */
+
+.warning-section{
+    background:linear-gradient(135deg,#FFF1F1,#FFFBE4);
+}
+
+.warning-card{
+    background:white;
+    border-radius:28px;
+    padding:25px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 10px 18px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.warning-card:hover{
+    background:#FFF7F7;
+    transform:translateY(-8px);
+}
+
+.warning-card i{
+    font-size:42px;
+    color:#FF5A5F;
+    margin-bottom:15px;
+}
+
+.warning-card h5{
+    color:#D9485F;
+    font-family:'Fredoka';
+}
+
+/* ---------- Parent Tips ---------- */
+
+.parent-tips{
+    background:#EAFBF5;
+}
+
+.tip-box{
+    background:white;
+    border-left:8px solid #35C759;
+    border-radius:20px;
+    padding:22px;
+    box-shadow:0 8px 16px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.tip-box:hover{
+    transform:translateX(8px);
+}
+
+.tip-box h5{
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .age-hero h1{
+        font-size:40px;
+        text-align:center;
+    }
+
+    .age-hero{
+        text-align:center;
+    }
+
+    .timeline::before{
+        left:20px;
+    }
+
+    .timeline-item{
+        width:100%;
+        margin-left:35px !important;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        margin-right:0;
+    }
+
+    .detail-box{
+        padding:25px;
+    }
+
+    .offline-card img{
+        height:180px;
+    }
+
+}
+/* =====================================
+      AGE GUIDE JS SUPPORT CSS
+===================================== */
+
+/* Selected Age Card */
+
+.selected-age{
+
+border:3px solid #35C759 !important;
+background:#EFFFF5 !important;
+transform:translateY(-10px) scale(1.04);
+
+}
+
+/* Reveal Animation */
+
+.hidden{
+
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* Floating Parent Tip */
+
+.floating-tip{
+
+position:fixed;
+bottom:25px;
+left:25px;
+background:#35C759;
+color:white;
+padding:15px 20px;
+border-radius:18px;
+font-size:15px;
+font-weight:500;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+opacity:0;
+transform:translateY(30px);
+transition:.5s;
+z-index:9999;
+max-width:280px;
+
+}
+
+.show-tip{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* Timeline Animation */
+
+.timeline-item{
+
+animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+/* ==========================================
+        SCREEN TIME CALCULATOR PAGE
+========================================== */
+
+/* ---------- Calculator Hero ---------- */
+
+.calculator-hero{
+    background:linear-gradient(135deg,#E2F8FF,#FFF3C4,#FFE5F5);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.calculator-hero::before{
+    content:"🌈";
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-size:80px;
+    opacity:.25;
+}
+
+.calculator-hero::after{
+    content:"☁️";
+    position:absolute;
+    bottom:30px;
+    right:40px;
+    font-size:70px;
+    opacity:.35;
+}
+
+.calculator-hero h1{
+    font-family:'Baloo 2',cursive;
+    color:#126782;
+    font-size:58px;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.calculator-hero p{
+    font-size:18px;
+    color:#555;
+}
+
+/* ---------- Calculator Box ---------- */
+
+.calculator-section{
+    background:#FFFDF8;
+}
+
+.calculator-box{
+    background:white;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+.calculator-box h2{
+    font-family:'Baloo 2';
+    color:#0F5DA8;
+}
+
+.calculator-box label{
+    font-weight:600;
+    color:#355070;
+    margin-bottom:8px;
+}
+
+.calculator-box .form-control,
+.calculator-box .form-select{
+    border-radius:18px;
+    padding:12px 16px;
+    border:2px solid #D6EEFF;
+    box-shadow:none;
+}
+
+.calculator-box .form-control:focus,
+.calculator-box .form-select:focus{
+    border-color:#35C759;
+    box-shadow:0 0 0 0.2rem rgba(53,199,89,.2);
+}
+
+/* ---------- Result Section ---------- */
+
+.result-section{
+    background:linear-gradient(135deg,#EFFFF5,#FFF7E7);
+}
+
+.result-box{
+    background:white;
+    border-radius:35px;
+    padding:45px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.result-box h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.result-image{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #D8FFE4;
+    margin:20px auto;
+}
+
+#scoreValue{
+    font-size:70px;
+    font-family:'Fredoka';
+    color:#2DC653;
+    margin-bottom:10px;
+}
+
+#scoreStatus{
+    color:#FF5A5F;
+    font-family:'Fredoka';
+    margin-bottom:15px;
+}
+
+/* Progress Bar */
+
+.progress{
+    height:22px;
+    border-radius:30px;
+    background:#EAF6FF;
+}
+
+.progress-bar{
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#recommendation{
+    font-size:18px;
+    color:#355070;
+    margin-top:20px;
+    font-weight:500;
+}
+
+/* ---------- Screen Tips ---------- */
+
+.screen-tip-card{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    height:100%;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.screen-tip-card:hover{
+    transform:translateY(-10px);
+}
+
+.screen-tip-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.screen-tip-card h5{
+    padding:18px 20px 10px;
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+.screen-tip-card p{
+    padding:0 20px 20px;
+    color:#666;
+}
+
+/* ---------- Wellness Meter ---------- */
+
+.score-circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin:auto;
+    background:conic-gradient(#35C759 0deg,#EAF6FF 0deg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.score-circle span{
+    width:150px;
+    height:150px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Fredoka';
+    font-size:42px;
+    color:#35C759;
+}
+
+/* ---------- Wellness Cards ---------- */
+
+.wellness-card{
+    background:white;
+    padding:20px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 16px rgba(0,0,0,.08);
+    height:100%;
+    transition:.3s;
+}
+
+.wellness-card:hover{
+    transform:scale(1.04);
+}
+
+.wellness-card i{
+    font-size:40px;
+    color:#35C759;
+    margin-bottom:12px;
+}
+
+.wellness-card h5{
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+/* ---------- Floating Emojis ---------- */
+
+.floating-heart{
+    position:fixed;
+    bottom:-40px;
+    pointer-events:none;
+    animation:floatHeart linear forwards;
+    z-index:999;
+}
+
+@keyframes floatHeart{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .calculator-hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .calculator-hero h1{
+        font-size:40px;
+    }
+
+    .calculator-box{
+        padding:25px;
+    }
+
+    .result-box{
+        padding:30px 20px;
+    }
+
+    .result-image{
+        width:140px;
+        height:140px;
+    }
+
+    #scoreValue{
+        font-size:52px;
+    }
+
+    .screen-tip-card img{
+        height:180px;
+    }
+
+}
+/* ==========================================
+      CALCULATOR JAVASCRIPT STYLES
+========================================== */
+
+/* Score Pop Animation */
+
+.pop{
+    animation:popScore .6s ease;
+}
+
+@keyframes popScore{
+
+    0%{
+        transform:scale(.5);
+    }
+
+    60%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Wellness Fact Popup */
+
+.fact-popup{
+
+    position:fixed;
+    top:90px;
+    right:20px;
+    background:#4CD964;
+    color:white;
+    padding:16px 18px;
+    border-radius:18px;
+    max-width:260px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    opacity:0;
+    transform:translateX(100px);
+    transition:.5s;
+    z-index:9999;
+    font-size:15px;
+    font-weight:500;
+
+}
+
+.show-fact{
+
+    opacity:1;
+    transform:translateX(0);
+
+}
+
+/* Floating Celebration Emoji */
+
+.floating-heart{
+
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:999;
+    animation:celebrate linear forwards;
+
+}
+
+@keyframes celebrate{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* Progress Bar Animation */
+
+.progress-bar{
+
+    transition:width 1.2s ease;
+
+}
+/* ==========================================
+        HABIT TRACKER PAGE
+========================================== */
+
+/* ---------- Hero Section ---------- */
+
+.tracker-hero{
+    background:linear-gradient(135deg,#DFF8FF,#FFF8C9,#FFE8F5);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.tracker-hero::before{
+    content:"🌈";
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-size:80px;
+    opacity:.25;
+}
+
+.tracker-hero::after{
+    content:"☁️";
+    position:absolute;
+    bottom:20px;
+    right:30px;
+    font-size:70px;
+    opacity:.35;
+}
+
+.tracker-hero h1{
+    font-family:'Baloo 2',cursive;
+    font-size:58px;
+    color:#126782;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.tracker-hero p{
+    color:#555;
+    font-size:18px;
+}
+
+/* ---------- Streak Section ---------- */
+
+.streak-section{
+    background:#FFFDF8;
+    padding:60px 0;
+}
+
+.streak-card{
+    background:linear-gradient(135deg,#35C759,#7ED957);
+    color:white;
+    border-radius:35px;
+    padding:45px 30px;
+    box-shadow:0 15px 30px rgba(53,199,89,.25);
+}
+
+.streak-card h2{
+    font-family:'Baloo 2';
+    margin-bottom:10px;
+}
+
+#streakCount{
+    font-family:'Fredoka';
+    font-size:70px;
+    margin:15px 0;
+    color:#FFF9C4;
+}
+
+.streak-card p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* ---------- Habit Checklist ---------- */
+
+.habit-section{
+    background:#F8FFF9;
+}
+
+.habit-card{
+    background:white;
+    border-radius:30px;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.habit-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.habit-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.habit-left img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.habit-left h5{
+    color:#126782;
+    font-family:'Fredoka';
+    margin-bottom:5px;
+}
+
+.habit-left p{
+    margin:0;
+    color:#666;
+    font-size:14px;
+}
+
+/* ---------- Custom Checkbox ---------- */
+
+.habit-check{
+    width:30px;
+    height:30px;
+    accent-color:#35C759;
+    cursor:pointer;
+}
+
+/* Completed Habit */
+
+.habit-complete{
+    background:#E9FFF0 !important;
+    border:2px solid #35C759;
+}
+
+/* ---------- Progress Section ---------- */
+
+.progress-section{
+    background:linear-gradient(135deg,#EAFBF5,#FFF9D8);
+}
+
+.progress-box{
+    background:white;
+    border-radius:35px;
+    padding:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.progress-box h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.progress-large{
+    height:28px;
+    border-radius:30px;
+    background:#E8F4FF;
+}
+
+#habitProgressBar{
+    background:#35C759;
+    font-weight:600;
+    font-size:15px;
+}
+
+/* ---------- Badge Section ---------- */
+
+.badge-section{
+    background:#FFFDF7;
+}
+
+.badge-card{
+    background:white;
+    border-radius:30px;
+    padding:30px 20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.badge-card:hover{
+    transform:translateY(-8px);
+}
+
+.badge-card i{
+    font-size:45px;
+    color:#F4B942;
+    margin-bottom:15px;
+}
+
+.badge-card h5{
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+.badge-lock{
+    margin-top:18px;
+    background:#FFE7E7;
+    color:#E63946;
+    padding:8px 15px;
+    border-radius:20px;
+    display:inline-block;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* Badge Unlocked */
+
+.badge-unlocked{
+    background:#D8FFE4 !important;
+    color:#15803D !important;
+}
+
+/* ---------- Motivation Section ---------- */
+
+#habitQuote{
+    font-size:28px;
+    color:#FF5A5F;
+    font-family:'Fredoka';
+    margin:25px 0;
+}
+
+/* ---------- Floating Badge Popup ---------- */
+
+.badge-popup{
+    position:fixed;
+    top:100px;
+    right:20px;
+    background:#FFD54F;
+    color:#5B4200;
+    padding:18px;
+    border-radius:20px;
+    font-weight:600;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transform:translateX(120%);
+    transition:.5s;
+    z-index:9999;
+    max-width:260px;
+}
+
+.show-popup{
+    transform:translateX(0);
+}
+
+/* ---------- Celebration Stars ---------- */
+
+.star{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    animation:starFloat linear forwards;
+    z-index:999;
+}
+
+@keyframes starFloat{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .tracker-hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .tracker-hero h1{
+        font-size:40px;
+    }
+
+    .habit-card{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .habit-check{
+        align-self:flex-end;
+    }
+
+    #streakCount{
+        font-size:50px;
+    }
+
+    .progress-box{
+        padding:25px;
+    }
+
+}
+/* ==========================================
+      HABIT TRACKER JS SUPPORT
+========================================== */
+
+/* Progress Animation */
+
+#habitProgressBar{
+    transition:width 0.8s ease;
+}
+
+/* Completed Habit Glow */
+
+.habit-complete{
+    animation:habitGlow .5s ease;
+}
+
+@keyframes habitGlow{
+
+    0%{
+        transform:scale(.95);
+    }
+
+    50%{
+        transform:scale(1.02);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Badge Unlock Animation */
+
+.badge-unlocked{
+    animation:badgePop .6s ease;
+}
+
+@keyframes badgePop{
+
+    0%{
+        transform:scale(.5);
+    }
+
+    60%{
+        transform:scale(1.15);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Floating Stars */
+
+.star{
+
+    position:fixed;
+    bottom:-40px;
+    pointer-events:none;
+    z-index:9999;
+    animation:starRise linear forwards;
+
+}
+
+@keyframes starRise{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+/* ==========================================
+            SLEEP HUB PAGE
+========================================== */
+
+/* ---------- Hero Section ---------- */
+
+.sleep-hero{
+    background:linear-gradient(135deg,#E8F0FF,#DCCEFF,#FFF2D6);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.sleep-hero::before{
+    content:"🌙";
+    position:absolute;
+    top:25px;
+    left:35px;
+    font-size:80px;
+    opacity:.3;
+}
+
+.sleep-hero::after{
+    content:"⭐";
+    position:absolute;
+    bottom:30px;
+    right:40px;
+    font-size:70px;
+    opacity:.4;
+}
+
+.sleep-hero h1{
+    font-family:'Baloo 2',cursive;
+    color:#334EAC;
+    font-size:60px;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.sleep-hero p{
+    color:#5C677D;
+    font-size:18px;
+}
+
+/* ---------- Bedtime Planner ---------- */
+
+.planner-section{
+    background:#FFFDF8;
+}
+
+.planner-box{
+    background:white;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.planner-box h2{
+    color:#334EAC;
+    font-family:'Baloo 2';
+}
+
+.planner-box .form-control{
+    border-radius:20px;
+    padding:12px 15px;
+    border:2px solid #D8E8FF;
+}
+
+.planner-box .form-control:focus{
+    border-color:#6C63FF;
+    box-shadow:0 0 0 .2rem rgba(108,99,255,.15);
+}
+
+.result-time{
+    background:linear-gradient(135deg,#EEF4FF,#FFF7D8);
+    border-radius:30px;
+    padding:25px;
+}
+
+.result-time h3{
+    color:#6C63FF;
+    font-family:'Fredoka';
+}
+
+#bedtimeResult{
+    font-family:'Fredoka';
+    font-size:60px;
+    color:#2E7DFF;
+}
+
+#bedtimeText{
+    color:#555;
+}
+
+/* ---------- Sleep Cards ---------- */
+
+.sleep-hours{
+    background:#F3F8FF;
+}
+
+.sleep-card{
+    border-radius:30px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+    color:white;
+}
+
+.sleep-card:hover{
+    transform:translateY(-8px);
+}
+
+.sleep-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.sleep-card h4{
+    font-family:'Fredoka';
+    margin-top:20px;
+}
+
+.sleep-card h2{
+    font-family:'Baloo 2';
+    font-size:36px;
+}
+
+.sleep-card p{
+    padding:0 20px 25px;
+}
+
+.green-card{background:#4CAF50;}
+.yellow-card{background:#F4B942;}
+.blue-card{background:#4A90E2;}
+.pink-card{background:#EC5FA8;}
+
+/* ---------- Routine Checklist ---------- */
+
+.routine-section{
+    background:#FFFDF7;
+}
+
+.routine-card{
+    background:white;
+    padding:22px;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+}
+
+.routine-card:hover{
+    transform:translateX(8px);
+}
+
+.routine-check{
+    width:28px;
+    height:28px;
+    accent-color:#6C63FF;
+}
+
+.routine-complete{
+    background:#EEF2FF !important;
+    border-left:6px solid #6C63FF;
+}
+
+/* ---------- Relax Section ---------- */
+
+.relax-section{
+    background:linear-gradient(135deg,#EAF2FF,#FFF5E5);
+}
+
+.relax-card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.relax-card:hover{
+    transform:translateY(-10px);
+}
+
+.relax-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.relax-card h5{
+    padding:18px 15px 10px;
+    color:#334EAC;
+    font-family:'Fredoka';
+}
+
+.relax-card p{
+    padding:0 20px 25px;
+    color:#666;
+}
+
+/* ---------- Sleep Rating ---------- */
+
+.quality-section{
+    background:#EEF5FF;
+}
+
+.quality-box{
+    background:white;
+    border-radius:35px;
+    padding:45px;
+    box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.quality-box h2{
+    color:#334EAC;
+    font-family:'Baloo 2';
+}
+
+.stars{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.star-rate{
+    font-size:40px;
+    color:#D3D3D3;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.star-rate:hover{
+    transform:scale(1.2);
+}
+
+.star-selected{
+    color:#FFD54F !important;
+}
+
+#sleepRating{
+    color:#6C63FF;
+    font-family:'Fredoka';
+}
+
+/* ---------- Floating Moon & Stars ---------- */
+
+.night-star{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:999;
+    animation:nightFloat linear forwards;
+}
+
+@keyframes nightFloat{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* ---------- Sleep Tip Popup ---------- */
+
+.sleep-popup{
+    position:fixed;
+    top:95px;
+    left:20px;
+    background:#6C63FF;
+    color:white;
+    padding:16px 18px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    max-width:260px;
+    transform:translateX(-120%);
+    transition:.5s;
+    z-index:9999;
+}
+
+.show-sleep-popup{
+    transform:translateX(0);
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .sleep-hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .sleep-hero h1{
+        font-size:40px;
+    }
+
+    .planner-box{
+        padding:25px;
+    }
+
+    #bedtimeResult{
+        font-size:42px;
+    }
+
+    .quality-box{
+        padding:25px;
+    }
+
+    .star-rate{
+        font-size:32px;
+    }
+
+    .relax-card img,
+    .sleep-card img{
+        height:180px;
+    }
+
+}
+/* ==========================================
+        SLEEP HUB JS SUPPORT
+========================================== */
+
+/* Planner Animation */
+
+#bedtimeResult{
+    animation:glowText 2s infinite alternate;
+}
+
+@keyframes glowText{
+
+    from{
+        text-shadow:0 0 10px #B8D0FF;
+    }
+
+    to{
+        text-shadow:0 0 25px #6C63FF;
+    }
+
+}
+
+/* Completed Routine */
+
+.routine-complete{
+    background:#EEF2FF !important;
+    border-left:6px solid #6C63FF;
+    animation:routineDone .5s ease;
+}
+
+@keyframes routineDone{
+
+    0%{transform:scale(.95);}
+    50%{transform:scale(1.02);}
+    100%{transform:scale(1);}
+
+}
+
+/* Golden Stars */
+
+.star-selected{
+    color:#FFD54F !important;
+    transform:scale(1.2);
+}
+
+/* Floating Moon & Stars */
+
+.night-star{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:9999;
+    animation:nightRise linear forwards;
+}
+
+@keyframes nightRise{
+
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+
+}
+/* ==========================================
+        OFFLINE ACTIVITIES PAGE
+========================================== */
+
+/* ---------- Hero Section ---------- */
+
+.activity-hero{
+    background:linear-gradient(135deg,#E6FFF7,#FFF4C4,#FFE6F3);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.activity-hero::before{
+    content:"🌈";
+    position:absolute;
+    top:25px;
+    left:30px;
+    font-size:80px;
+    opacity:.25;
+}
+
+.activity-hero::after{
+    content:"☀️";
+    position:absolute;
+    bottom:25px;
+    right:40px;
+    font-size:70px;
+    opacity:.35;
+}
+
+.activity-hero h1{
+    font-family:'Baloo 2',cursive;
+    font-size:58px;
+    color:#0F5DA8;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.activity-hero p{
+    color:#5C677D;
+    font-size:18px;
+}
+
+/* ---------- Activity Generator ---------- */
+
+.generator-section{
+    background:#FFFDF8;
+}
+
+.generator-box{
+    background:white;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 12px 24px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.generator-box h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.activity-generator-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #CFFFE2;
+    margin:25px auto;
+    transition:.4s;
+}
+
+.generator-box h3{
+    color:#FF5A5F;
+    font-family:'Fredoka';
+}
+
+.generator-box p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* ---------- Indoor Outdoor ---------- */
+
+.indoor-outdoor{
+    background:#F8FFF8;
+}
+
+.activity-category{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.activity-category:hover{
+    transform:translateY(-8px);
+}
+
+.activity-category img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.activity-category h3{
+    padding:20px;
+    font-family:'Fredoka';
+    color:#126782;
+}
+
+.activity-category ul{
+    padding:0 35px 25px;
+    color:#555;
+}
+
+.activity-category li{
+    margin-bottom:10px;
+}
+
+.indoor{
+    border-top:8px solid #FFD54F;
+}
+
+.outdoor{
+    border-top:8px solid #35C759;
+}
+
+/* ---------- No Screen Challenge ---------- */
+
+.challenge30-section{
+    background:linear-gradient(135deg,#FFF8D5,#EFFFF3);
+}
+
+.challenge30-box{
+    background:white;
+    border-radius:35px;
+    padding:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.challenge30-box h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.challenge-display{
+    background:#FFF4D8;
+    border-radius:25px;
+    padding:25px;
+    margin:30px 0;
+}
+
+#challenge30{
+    color:#FF6B6B;
+    font-family:'Fredoka';
+}
+
+/* ---------- Bingo Board ---------- */
+
+.bingo-section{
+    background:#FFFDF8;
+}
+
+.bingo-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.bingo-cell{
+    background:#EAFBF5;
+    border-radius:18px;
+    padding:18px 10px;
+    text-align:center;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    min-height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.bingo-cell:hover{
+    background:#D7FFE8;
+}
+
+.bingo-complete{
+    background:#35C759 !important;
+    color:white;
+}
+
+.center-cell{
+    background:#FFD54F;
+    color:#7A5200;
+    font-weight:700;
+}
+
+/* ---------- Creative Cards ---------- */
+
+.creative-section{
+    background:#EEF9FF;
+}
+
+.creative-card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.creative-card:hover{
+    transform:translateY(-8px);
+}
+
+.creative-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.creative-card h5{
+    padding:18px 15px 10px;
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+.creative-card p{
+    padding:0 20px 25px;
+    color:#666;
+}
+
+/* ---------- Fun Wheel ---------- */
+
+.wheel-section{
+    background:linear-gradient(135deg,#EAFBF5,#FFF7D8,#FFE9F5);
+}
+
+.wheel-circle{
+    width:260px;
+    height:260px;
+    margin:35px auto;
+    border-radius:50%;
+    background:conic-gradient(
+        #35C759 0deg 60deg,
+        #FFD54F 60deg 120deg,
+        #6CCBFF 120deg 180deg,
+        #FFB5A7 180deg 240deg,
+        #EAD7FF 240deg 300deg,
+        #F78FB3 300deg 360deg
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    animation:wheelGlow 5s linear infinite;
+}
+
+.wheel-circle h3{
+    width:170px;
+    height:170px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    font-family:'Fredoka';
+    color:#126782;
+    font-size:20px;
+}
+
+@keyframes wheelGlow{
+
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+
+}
+
+/* ---------- Fun Fact ---------- */
+
+#funFact{
+    font-family:'Fredoka';
+    font-size:28px;
+    color:#FF5A5F;
+    margin:25px 0;
+}
+
+/* ---------- Floating Emoji ---------- */
+
+.activity-emoji{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:9999;
+    animation:emojiRise linear forwards;
+}
+
+@keyframes emojiRise{
+
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:992px){
+
+    .bingo-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .activity-hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .activity-hero h1{
+        font-size:40px;
+    }
+
+    .generator-box,
+    .challenge30-box{
+        padding:25px;
+    }
+
+    .wheel-circle{
+        width:220px;
+        height:220px;
+    }
+
+    .wheel-circle h3{
+        width:140px;
+        height:140px;
+        font-size:16px;
+    }
+
+    .bingo-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:576px){
+
+    .bingo-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .bingo-cell{
+        font-size:13px;
+        min-height:75px;
+    }
+
+    .activity-generator-img{
+        width:170px;
+        height:170px;
+    }
+
+}
+/* ==========================================
+      ACTIVITIES JS SUPPORT
+========================================== */
+
+/* Activity image animation */
+
+.spin-image{
+    animation:spinPop .6s ease;
+}
+
+@keyframes spinPop{
+
+    0%{
+        transform:scale(.7) rotate(-15deg);
+    }
+
+    50%{
+        transform:scale(1.08) rotate(10deg);
+    }
+
+    100%{
+        transform:scale(1) rotate(0);
+    }
+
+}
+
+/* Wheel Spin */
+
+@keyframes spinWheel{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(1080deg);
+    }
+
+}
+
+/* Floating celebration emoji */
+
+.activity-emoji{
+
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:9999;
+    animation:emojiRise linear forwards;
+
+}
+
+@keyframes emojiRise{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+/* ==========================================
+            FAMILY PLEDGE PAGE
+========================================== */
+
+/* ---------- Hero Section ---------- */
+
+.pledge-hero{
+    background:linear-gradient(135deg,#E9FFF5,#FFF4C8,#FFE8F4);
+    padding:140px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.pledge-hero::before{
+    content:"🌈";
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-size:85px;
+    opacity:.25;
+}
+
+.pledge-hero::after{
+    content:"💚";
+    position:absolute;
+    bottom:25px;
+    right:35px;
+    font-size:70px;
+    opacity:.3;
+}
+
+.pledge-hero h1{
+    font-family:'Baloo 2',cursive;
+    color:#126782;
+    font-size:58px;
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.pledge-hero p{
+    color:#555;
+    font-size:18px;
+}
+
+/* ---------- Pledge Checklist ---------- */
+
+.pledge-section{
+    background:#FFFDF8;
+}
+
+.pledge-card{
+    background:white;
+    padding:22px;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 10px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+}
+
+.pledge-card:hover{
+    transform:translateX(8px);
+}
+
+.pledge-check{
+    width:28px;
+    height:28px;
+    accent-color:#35C759;
+    cursor:pointer;
+}
+
+.pledge-complete{
+    background:#EFFFF5 !important;
+    border-left:6px solid #35C759;
+}
+
+/* ---------- Certificate ---------- */
+
+.certificate-section{
+    background:linear-gradient(135deg,#FFF9E6,#EFFFF5);
+}
+
+.certificate-box{
+    background:white;
+    padding:40px;
+    border-radius:35px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.certificate-top{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #FFD54F;
+    margin-bottom:20px;
+}
+
+.certificate-box h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.certificate-box label{
+    font-weight:600;
+    color:#355070;
+}
+
+.certificate-box .form-control{
+    border-radius:15px;
+    padding:12px;
+    border:2px solid #DFF2FF;
+}
+
+.certificate-preview{
+    margin-top:30px;
+    padding:35px;
+    border:5px dashed #FFD54F;
+    border-radius:30px;
+    background:#FFFDF5;
+}
+
+.preview-image{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.certificate-preview h3{
+    color:#2E7D32;
+    font-family:'Baloo 2';
+}
+
+.certificate-preview h4{
+    color:#FF5A5F;
+    font-family:'Fredoka';
+}
+
+.certificate-preview h5{
+    color:#126782;
+    margin-top:25px;
+}
+
+/* ---------- Wellness Wall ---------- */
+
+.wall-section{
+    background:#EEF9FF;
+}
+
+.wall-card{
+    background:white;
+    border-radius:28px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.wall-card:hover{
+    transform:translateY(-8px);
+}
+
+.wall-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.wall-card h5{
+    padding:18px 15px 10px;
+    color:#126782;
+    font-family:'Fredoka';
+}
+
+.wall-card p{
+    padding:0 20px 25px;
+    color:#666;
+}
+
+/* ---------- Thank You ---------- */
+
+.thankyou-section{
+    background:linear-gradient(135deg,#EFFFF5,#FFF8E8,#F7EEFF);
+    padding:80px 0;
+}
+
+.thankyou-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #CFFFE2;
+    margin-bottom:30px;
+}
+
+.thankyou-section h2{
+    color:#126782;
+    font-family:'Baloo 2';
+}
+
+.thankyou-section h3{
+    color:#35C759;
+    font-family:'Fredoka';
+}
+
+/* ---------- Certificate Completed ---------- */
+
+.certificate-success{
+    background:#E8FFF1;
+    border:3px solid #35C759;
+}
+
+/* ---------- Floating Hearts ---------- */
+
+.heart-float{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:9999;
+    animation:heartRise linear forwards;
+}
+
+@keyframes heartRise{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .pledge-hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .pledge-hero h1{
+        font-size:40px;
+    }
+
+    .certificate-box{
+        padding:25px;
+    }
+
+    .certificate-preview{
+        padding:25px;
+    }
+
+    .thankyou-img{
+        width:140px;
+        height:140px;
+    }
+
+}
+/* Fix certificate input fields */
+
+.certificate-box input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #8ED1FC;
+    border-radius: 15px;
+    background: #ffffff;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.certificate-box input:focus{
+    outline: none;
+    border-color: #35C759;
+    box-shadow: 0 0 10px rgba(53,199,89,0.3);
+}
+.teen-section .age-image{
+    height:300px;
+    object-fit:cover;
+}

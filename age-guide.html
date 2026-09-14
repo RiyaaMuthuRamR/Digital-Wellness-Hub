@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Guide | Digital Wellness Hub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ========= NAVBAR ========= -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">🌈 Digital Wellness Hub</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="#">Age Guide</a></li>
+
+<li class="nav-item"><a class="nav-link" href="calculator.html">Screen Time</a></li>
+
+<li class="nav-item"><a class="nav-link" href="tracker.html">Habit Tracker</a></li>
+
+<li class="nav-item"><a class="nav-link" href="sleep.html">Sleep Hub</a></li>
+
+<li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+
+<li class="nav-item"><a class="nav-link" href="pledge.html">Pledge</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ========= HERO ========= -->
+
+<section class="age-hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="welcome-badge">👶 Healthy Habits Grow With Every Age</span>
+
+<h1>Age Wise Digital Wellness Guide 🌈</h1>
+
+<p>
+Every child grows differently. Learn the right screen habits, sleep routines,
+play ideas and family tips for every stage of childhood.
+</p>
+
+<a href="#agecards" class="btn hero-btn">Explore Ages</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="images/a5.jpg" class="hero-image img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= AGE CARDS ========= -->
+
+<section id="agecards" class="age-selection">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Choose Your Child's Age 💚</h2>
+
+<p class="section-subtitle">
+Click a card to see healthy digital habits for that age.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="age-select-card" onclick="showAge(0)">
+
+<img src="images/a1.jpg">
+
+<h4>0–2 Years</h4>
+
+<p>Babies & Infants</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="age-select-card" onclick="showAge(1)">
+
+<img src="images/a2.jpg">
+
+<h4>2–5 Years</h4>
+
+<p>Toddlers</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="age-select-card" onclick="showAge(2)">
+
+<img src="images/a3.jpg">
+
+<h4>6–12 Years</h4>
+
+<p>School Kids</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="age-select-card" onclick="showAge(3)">
+
+<img src="images/a4.jpg">
+
+<h4>13–15 Years</h4>
+
+<p>Teenagers</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= AGE DETAILS ========= -->
+
+<section class="age-details">
+
+<div class="container">
+
+<div class="detail-box">
+
+<h2 id="ageTitle">👶 Babies (0–2 Years)</h2>
+
+<p id="ageDescription">
+Avoid entertainment screen time. Encourage talking, singing, tummy time,
+storytelling and face-to-face interaction with parents.
+</p>
+
+<div class="row g-4 mt-3">
+
+<div class="col-md-4">
+
+<div class="mini-card">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+<h5>Screen Time</h5>
+
+<p id="screenTime">Avoid entertainment screens.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="mini-card">
+
+<i class="fa-solid fa-bed"></i>
+
+<h5>Sleep Goal</h5>
+
+<p id="sleepGoal">12–16 hours including naps.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="mini-card">
+
+<i class="fa-solid fa-puzzle-piece"></i>
+
+<h5>Best Activities</h5>
+
+<p id="activityGoal">Talking, music, sensory toys.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= SCREEN TIME RECOMMENDATIONS ========= -->
+
+<section class="recommendation-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Healthy Screen Time Recommendations 📱</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-3">
+
+<div class="recommend-card green">
+
+<h4>0–2 Years</h4>
+
+<h3>🚫 Avoid</h3>
+
+<p>Focus on talking, eye contact and bonding.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="recommend-card yellow">
+
+<h4>2–5 Years</h4>
+
+<h3>⏱ 1 Hour</h3>
+
+<p>Choose educational content with parents.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="recommend-card blue">
+
+<h4>6–12 Years</h4>
+
+<h3>⏱ 1–2 Hours</h3>
+
+<p>Take regular eye and movement breaks.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-3">
+
+<div class="recommend-card pink">
+
+<h4>13–15 Years</h4>
+
+<h3>📵 Balance</h3>
+
+<p>Limit bedtime scrolling and social media.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= SLEEP TIMELINE ========= -->
+
+<section class="sleep-timeline">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Healthy Sleep Routine 🌙</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<span>🌅 Morning</span>
+<p>Sunlight, breakfast and active play.</p>
+</div>
+
+<div class="timeline-item">
+<span>📚 Afternoon</span>
+<p>Learning time with outdoor breaks.</p>
+</div>
+
+<div class="timeline-item">
+<span>🍽 Evening</span>
+<p>Family dinner without phones.</p>
+</div>
+
+<div class="timeline-item">
+<span>🌙 Bedtime</span>
+<p>Storytime instead of screens for better sleep.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= OFFLINE ACTIVITIES ========= -->
+
+<section class="offline-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Best Offline Activities 🎨</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="offline-card">
+
+<img src="images/a1.jpg">
+
+<h5>👶 Babies</h5>
+
+<p>Music, peek-a-boo, colorful books and sensory toys.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="offline-card">
+
+<img src="images/a2.jpg">
+
+<h5>🎨 Toddlers</h5>
+
+<p>Drawing, clay, puzzles, dancing and storytelling.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="offline-card">
+
+<img src="images/a3.jpg">
+
+<h5>⚽ School Kids</h5>
+
+<p>Cycling, gardening, football, crafts and reading.</p>
+
+</div>
+
+</div>
+<div class="col-md-6">
+
+<div class="offline-card">
+
+<img src="images/t1.png">
+
+<h5>🌟 Teenagers</h5>
+
+<p>Photography, sports, painting, music, volunteering and journaling.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="offline-card">
+
+<img src="images/a5.jpg">
+
+<h5>👨‍👩‍👧 Family Activities</h5>
+
+<p>Cooking together, picnics, board games, yoga and nature walks.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= WARNING SIGNS ========= -->
+
+<section class="warning-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Warning Signs Parents Should Notice 🚨</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-eye"></i>
+
+<h5>Tired Eyes</h5>
+
+<p>Frequent rubbing, headaches and eye strain.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-face-frown"></i>
+
+<h5>Mood Changes</h5>
+
+<p>Anger or sadness when screen time ends.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-bed"></i>
+
+<h5>Poor Sleep</h5>
+
+<p>Late-night scrolling or difficulty sleeping.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-child-reaching"></i>
+
+<h5>Less Outdoor Play</h5>
+
+<p>Losing interest in physical activities.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h5>Less Family Interaction</h5>
+
+<p>Preferring screens over conversations.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="warning-card">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+<h5>Always Asking for Phone</h5>
+
+<p>Constantly demanding mobile devices.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= PARENT TIPS ========= -->
+
+<section class="parent-tips">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Tips Every Parent Can Follow 💛</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="tip-box">
+
+<h5>📵 Keep Bedrooms Screen-Free</h5>
+
+<p>Children sleep better without devices before bedtime.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="tip-box">
+
+<h5>🍽 Eat Meals Together</h5>
+
+<p>Phones stay away during family meals.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="tip-box">
+
+<h5>🌳 Outdoor Play Every Day</h5>
+
+<p>At least 20–60 minutes depending on age.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="tip-box">
+
+<h5>❤️ Be a Role Model</h5>
+
+<p>Children learn healthy habits from parents.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= CTA ========= -->
+
+<section class="cta-section">
+
+<div class="container text-center">
+
+<h2>Ready to Check Your Child's Screen Habits?</h2>
+
+<p>Use our Screen Time Calculator to know your family's wellness score.</p>
+
+<a href="calculator.html" class="btn hero-btn">Open Calculator</a>
+
+</div>
+
+</section>
+
+<!-- ========= FOOTER ========= -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h3>🌈 Digital Wellness Hub</h3>
+
+<p>Healthy Screens • Happy Kids • Happy Families</p>
+
+<div class="footer-icons">
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+<p class="copyright">
+© 2026 Digital Wellness Hub.
+</p>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="js/age-guide.js"></script>
+
+</body>
+</html>

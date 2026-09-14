@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Activities | Digital Wellness Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+🌈 Digital Wellness Hub
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="age-guide.html">Age Guide</a></li>
+
+<li class="nav-item"><a class="nav-link" href="calculator.html">Screen Time</a></li>
+
+<li class="nav-item"><a class="nav-link" href="tracker.html">Habit Tracker</a></li>
+
+<li class="nav-item"><a class="nav-link" href="sleep.html">Sleep Hub</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="#">Activities</a></li>
+
+<li class="nav-item"><a class="nav-link" href="pledge.html">Pledge</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="activity-hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="welcome-badge">🎨 Screen-Free Fun Zone</span>
+
+<h1>Play More. Scroll Less. Smile More! 🌳</h1>
+
+<p>
+Discover exciting indoor and outdoor activities that help children spend less time on screens and more time making memories.
+</p>
+
+<a href="#generator" class="btn hero-btn">Start a Fun Challenge</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="images/o5.jpg" class="hero-image img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RANDOM ACTIVITY GENERATOR -->
+
+<section id="generator" class="generator-section">
+
+<div class="container">
+
+<div class="generator-box text-center">
+
+<h2>🎲 Today's Family Activity Generator</h2>
+
+<img src="images/o1.jpg" id="activityImage" class="activity-generator-img">
+
+<h3 id="activityTitle">Build a Pillow Fort 🏰</h3>
+
+<p id="activityDescription">
+Turn blankets and pillows into a magical fort for storytelling and games.
+</p>
+
+<button class="btn hero-btn" onclick="generateActivity()">
+New Activity
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INDOOR / OUTDOOR -->
+
+<section class="indoor-outdoor">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Indoor & Outdoor Activities 🌈</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-6">
+
+<div class="activity-category indoor">
+
+<img src="images/o2.jpg">
+
+<h3>🏠 Indoor Fun</h3>
+
+<ul>
+<li>Drawing & Coloring</li>
+<li>Origami</li>
+<li>Storytelling</li>
+<li>Puzzles</li>
+<li>Cooking Together</li>
+<li>LEGO Building</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="activity-category outdoor">
+
+<img src="images/o3.jpg">
+
+<h3>🌳 Outdoor Fun</h3>
+
+<ul>
+<li>Nature Walk</li>
+<li>Cycling</li>
+<li>Treasure Hunt</li>
+<li>Football / Cricket</li>
+<li>Gardening</li>
+<li>Picnic</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- NO SCREEN CHALLENGE -->
+
+<section class="challenge30-section">
+
+<div class="container">
+
+<div class="challenge30-box text-center">
+
+<h2>⏱️ 30-Minute No Screen Challenge</h2>
+
+<p>Choose one challenge and complete it today.</p>
+
+<div class="challenge-display">
+
+<h3 id="challenge30">Read a Story Together 📚</h3>
+
+</div>
+
+<button class="btn challenge-btn" onclick="newChallenge30()">
+New Challenge
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WEEKEND BINGO -->
+
+<section class="bingo-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Weekend Family Bingo 🎯</h2>
+
+<p>Complete five activities in a row!</p>
+
+</div>
+
+<div class="bingo-grid">
+
+<div class="bingo-cell">🌳 Park Visit</div>
+<div class="bingo-cell">🎨 Paint Together</div>
+<div class="bingo-cell">🍕 Cook Together</div>
+<div class="bingo-cell">📚 Read Story</div>
+<div class="bingo-cell">🚲 Cycling</div>
+
+<div class="bingo-cell">🧩 Puzzle Time</div>
+<div class="bingo-cell">🌈 Dance Together</div>
+<div class="bingo-cell center-cell">FREE 💚</div>
+<div class="bingo-cell">🎵 Music Time</div>
+<div class="bingo-cell">🪴 Gardening</div>
+
+<div class="bingo-cell">🧺 Picnic</div>
+<div class="bingo-cell">🧁 Bake Cookies</div>
+<div class="bingo-cell">🎭 Puppet Show</div>
+<div class="bingo-cell">🧸 Build a Fort</div>
+<div class="bingo-cell">⭐ Stargazing</div>
+
+</div>
+
+<button class="btn hero-btn mt-4" onclick="resetBingo()">
+Reset Bingo
+</button>
+
+</div>
+
+</section>
+
+<!-- CREATIVE IDEAS -->
+
+<section class="creative-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">Creative Activity Ideas 💡</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="creative-card">
+
+<img src="images/o1.jpg">
+
+<h5>🎨 Art & Crafts</h5>
+
+<p>Create greeting cards, paper flowers and rainbow art.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="creative-card">
+
+<img src="images/o4.jpg">
+
+<h5>🎵 Music & Dance</h5>
+
+<p>Play music and create your own family dance challenge.</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="creative-card">
+
+<img src="images/o5.jpg">
+
+<h5>🏕 Adventure Games</h5>
+
+<p>Treasure hunts, camping indoors and pillow forts.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAMILY FUN WHEEL -->
+
+<section class="wheel-section">
+
+<div class="container text-center">
+
+<h2>🎡 Spin the Family Fun Wheel</h2>
+
+<div class="wheel-circle">
+
+<h3 id="wheelResult">🎨 Drawing Time</h3>
+
+</div>
+
+<button class="btn hero-btn mt-4" onclick="spinWheel()">
+Spin Activity Wheel
+</button>
+
+</div>
+
+</section>
+
+<!-- DAILY FUN FACT -->
+
+<section class="quote-section">
+
+<div class="container text-center">
+
+<h2>💚 Today's Family Fun Fact</h2>
+
+<p id="funFact"></p>
+
+<button class="btn quote-btn" onclick="newFunFact()">
+New Fun Fact
+</button>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img src="images/o2.jpg" class="img-fluid rounded-5 shadow">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2>Create More Memories Than Screen Time ❤️</h2>
+
+<p>
+The best childhood moments happen while laughing, exploring and playing together.
+</p>
+
+<a href="pledge.html" class="btn hero-btn">
+Take the Family Pledge
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h3>🌈 Digital Wellness Hub</h3>
+
+<p>Healthy Screens • Happy Kids • Happy Families</p>
+
+<div class="footer-icons">
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+<p class="copyright">
+© 2026 Digital Wellness Hub.
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/activities.js"></script>
+
+</body>
+</html>

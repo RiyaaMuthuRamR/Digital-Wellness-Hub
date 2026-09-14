@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Family Digital Wellness Pledge | Digital Wellness Hub</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="index.html">🌈 Digital Wellness Hub</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="age-guide.html">Age Guide</a></li>
+<li class="nav-item"><a class="nav-link" href="calculator.html">Screen Time</a></li>
+<li class="nav-item"><a class="nav-link" href="tracker.html">Habit Tracker</a></li>
+<li class="nav-item"><a class="nav-link" href="sleep.html">Sleep Hub</a></li>
+<li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+<li class="nav-item"><a class="nav-link active" href="#">Pledge</a></li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="pledge-hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="welcome-badge">💚 Family Promise</span>
+
+<h1>Let's Build Healthy Digital Habits Together 🌈</h1>
+
+<p>
+A small family promise can create a lifetime of healthy screen habits,
+better sleep, stronger relationships and happier childhood memories.
+</p>
+
+<a href="#certificate" class="btn hero-btn">Take the Family Pledge</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="images/p5.jpg" class="hero-image img-fluid">
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FAMILY PLEDGE -->
+
+<section class="pledge-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">🌈 Our Family Digital Wellness Promise</h2>
+
+<p class="section-subtitle">
+Tick each promise together as a family.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>📵 We will keep phones away during family meals.</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>🌙 We will avoid screens one hour before bedtime.</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>📚 We will read or tell stories together every day.</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>🌳 We will spend time playing outdoors every day.</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>❤️ We will spend quality family time without phones.</span>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="pledge-card">
+<input type="checkbox" class="pledge-check">
+<span>😊 We will use technology wisely, not endlessly.</span>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-5">
+<button class="btn hero-btn" onclick="completePledge()">
+Complete Our Family Promise
+</button>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATE -->
+
+<section id="certificate" class="certificate-section">
+
+<div class="container">
+
+<div class="certificate-box">
+
+<img src="images/p1.jpg" class="certificate-top">
+
+<h2>🏆 Family Digital Wellness Certificate</h2>
+
+<p>This certificate celebrates your family's commitment to healthy digital habits.</p>
+
+<div class="row mt-4">
+
+<div class="col-md-6 mb-3">
+<label>Parent / Family Name</label>
+<input type="text" id="familyName" class="form-control" placeholder="Enter family name">
+</div>
+
+<div class="col-md-6 mb-3">
+<label>Child's Name</label>
+<input type="text" id="childName" class="form-control" placeholder="Enter child's name">
+</div>
+
+</div>
+
+<div class="certificate-preview mt-4">
+
+<img src="images/p2.jpg" class="preview-image">
+
+<h3 id="certificateFamily">The __________ Family</h3>
+
+<h4 id="certificateChild">Proud Parent of __________</h4>
+
+<p>
+"We promise to build healthy screen habits, protect our sleep,
+play together, read together and grow together."
+</p>
+
+<h5>🌈 Healthy Screens • Happy Kids • Happy Families</h5>
+
+</div>
+
+<div class="text-center mt-4">
+
+<button class="btn hero-btn" onclick="generateCertificate()">
+Generate Certificate
+</button>
+
+<button class="btn challenge-btn" onclick="printCertificate()">
+    🖨️ Print Certificate
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DIGITAL WELLNESS WALL -->
+
+<section class="wall-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">💚 Family Wellness Wall</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="wall-card">
+<img src="images/p3.jpg">
+<h5>🌳 Play Together</h5>
+<p>Childhood memories grow outdoors, not on screens.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="wall-card">
+<img src="images/p4.jpg">
+<h5>📚 Read Together</h5>
+<p>Stories create imagination and stronger family bonds.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="wall-card">
+<img src="images/p5.jpg">
+<h5>❤️ Grow Together</h5>
+<p>Healthy habits begin with parents leading by example.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAMILY QUOTE -->
+
+<section class="quote-section">
+
+<div class="container text-center">
+
+<h2>🌼 Family Wellness Quote</h2>
+
+<p id="familyQuote">
+Children need more memories than screen time.
+</p>
+
+<button class="btn quote-btn" onclick="newFamilyQuote()">
+New Quote
+</button>
+
+</div>
+
+</section>
+
+<!-- THANK YOU -->
+
+<section class="thankyou-section">
+
+<div class="container text-center">
+
+<img src="images/p1.jpg" class="thankyou-img">
+
+<h2>Thank You for Choosing Healthy Digital Habits 💚</h2>
+
+<p>
+Together, we can help children enjoy technology in a balanced way while making time for sleep, play, learning and family.
+</p>
+
+<h3 class="mt-4">🌈 Healthy Screens • Happy Kids • Happy Families</h3>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h3>🌈 Digital Wellness Hub</h3>
+
+<p>Healthy Screens • Happy Kids • Happy Families</p>
+
+<div class="footer-icons">
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+<p class="copyright">
+© 2026 Digital Wellness Hub. Designed for parents and children.
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/pledge.js"></script>
+
+</body>
+</html>
