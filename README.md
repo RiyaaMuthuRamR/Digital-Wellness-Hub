@@ -2,7 +2,7 @@
 🌈 Digital Wellness Hub
 
 An interactive, production-ready web platform engineered to help families monitor digital consumption metrics, track behavioral workflows, and establish healthy data-driven lifestyle routines.
-🔗 Live Production Deployment: github.io
+🔗 Live Production Deployment: https://riyaamuthuramr.github.io/Digital-Wellness-Hub/
 
 🎯 Problem Statement
 
@@ -54,65 +54,5 @@ The platform provides programmatic systems to:
 
 • Verification Pipeline: Evaluates custom parent-and-child data entries against saved pledges to compile a personalized digital validation certificate via a browser-native execution script capable of formatting on-screen print views.
 
-📁 Repository Structure
 
-Digital-Wellness-Hub/
-│
-├── index.html
-├── age-guide.html
-├── calculator.html
-├── tracker.html
-├── sleep.html
-├── activities.html
-├── pledge.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── main.js
-│   ├── age-guide.js
-│   ├── calculator.js
-│   ├── tracker.js
-│   ├── sleep.js
-│   ├── activities.js
-│   └── pledge.js
-│
-├── images/
-│   ├── hero.jpg
-│   ├── a1.jpg
-│   ├── a2.jpg
-│   ├── a3.jpg
-│   ├── a4.jpg
-│   ├── a5.jpg
-│   ├── c1.jpg
-│   ├── c2.jpg
-│   ├── c3.jpg
-│   ├── c4.jpg
-│   ├── c5.jpg
-│   ├── h1.jpg
-│   ├── h2.jpg
-│   ├── h3.jpg
-│   ├── h4.jpg
-│   ├── habit1.jpg
-│   ├── habit2.jpg
-│   ├── habit3.jpg
-│   ├── habit4.jpg
-│   ├── habit5.jpg
-│   ├── o1.jpg
-│   ├── o2.jpg
-│   ├── o3.jpg
-│   ├── o4.jpg
-│   ├── o5.jpg
-│   ├── p1.jpg
-│   ├── p2.jpg
-│   ├── p3.jpg
-│   ├── p4.jpg
-│   ├── p5.jpg
-│   ├── s1.jpg
-│   ├── s2.jpg
-│   ├── s3.jpg
-│   ├── s4.jpg
-│   └── s5.jpg
-│
 └── README.md 
