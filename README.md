@@ -54,7 +54,8 @@ The platform provides programmatic systems to:
 
 • Verification Pipeline: Evaluates custom parent-and-child data entries against saved pledges to compile a personalized digital validation certificate via a browser-native execution script capable of formatting on-screen print views.
 
- 📁 Project Structure
+📁 Repository Structure
+
 Digital-Wellness-Hub/
 │
 ├── index.html
