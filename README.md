@@ -2,6 +2,7 @@
 🌈 Digital Wellness Hub
 
 An interactive, production-ready web platform engineered to help families monitor digital consumption metrics, track behavioral workflows, and establish healthy data-driven lifestyle routines.
+
 🔗 Live Production Deployment: https://riyaamuthuramr.github.io/Digital-Wellness-Hub/
 
 🎯 Problem Statement
@@ -54,5 +55,3 @@ The platform provides programmatic systems to:
 
 • Verification Pipeline: Evaluates custom parent-and-child data entries against saved pledges to compile a personalized digital validation certificate via a browser-native execution script capable of formatting on-screen print views.
 
-
-└── README.md 
